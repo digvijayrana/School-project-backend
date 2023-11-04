@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    image: ERP-server:latest
+    environment:
+      - CONNECTION_URL = mongodb+srv://digvijayrana0696:ranathakur@cluster0.mlh1sas.mongodb.net/erp_system?authSource=admin&replicaSet=atlas-146mlx-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true
+      - ACCESS_TOKEN = kjejqzpeojzlvjantn
+      - REFRESH_SESSION_SECRET=0nhujo9iv78av415tpqsdo89cffye4z9lz40tenw
+      - MAIL_ID = gauravm8604@gmail.com
+      - MAIL_PASSWORD =kjejqzpeojzlvjan
+      
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_DATABASE=erp_system
+    ports:
+      - '27018:27017'
