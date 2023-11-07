@@ -25,6 +25,10 @@
         "bcrypt": "^5.1.1",
 
   },
+    "engines": {
+    "node": ">=14 <20"
+  },
+
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
