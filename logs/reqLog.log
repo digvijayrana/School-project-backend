@@ -1596,3 +1596,4 @@
 29/10/2023, 02:50:13	b5251c42-74e1-42f0-8731-01690afb9415	GET	/api/v1/admin/subject-list	http://localhost:4200
 29/10/2023, 02:50:13	11979dac-4f3e-4bb0-8ca9-3e980a0a1674	GET	/api/v1/admin/class-list	http://localhost:4200
 29/10/2023, 02:50:13	7c62673a-e6c1-49bf-bdd1-2ad456e42f7c	GET	/api/v1/admin/user-details?email=johncod@example.com	http://localhost:4200
+07/11/2023, 12:02:18	f069d900-4559-4659-b464-82d49821e986	POST	/api/v1/auth/login	undefined
