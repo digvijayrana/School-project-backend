@@ -21,9 +21,9 @@ const login = async (req, res) => {
         const passwordMatch = await bcrypt.compare(password, user.password);
         if(passwordMatch){
             const accessToken = await  generateAccessToken( user.role,user.name,user.email);
-           const refreshToken =  await generateRefreshToken( user.role,user.name,user.email);
+        //    const refreshToken =  await generateRefreshToken( user.role,user.name,user.email);
             delete user.password
-            return res.status(200).json({ message: 'login successfull', status: true,  accessToken,refreshToken});
+            return res.status(200).json({ message: 'login successfull', status: true,  accessToken});
         } else {
             return res.status(400).send('Invalid email or password');
         }
